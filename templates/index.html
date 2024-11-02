@@ -7,22 +7,30 @@
     </head>
   </head>
   <body>
+    {%include 'nav.html'%}
     <div class="container">
       <h1 class="mt-2 mt-3">hello world
       {{owner}}
       </h1>
       <div>
         <img class="img-fluid" src='https://b93160e0-aba6-41ee-9c10-f83d6d4b77f3-00-372y4pzcbvh5o.pike.replit.dev/static/immg.png'>
-      </div>
+        </div>
       <h2 class="mt-2 mt-4">
         below is paragraph
       </h2>
+      <div class="row">
+        <div class="col-md-6 ">
       <p>
         I'm learning Flask and this is what I have learned so far - that Flask is a Python-based web framework that is used to create websites and web APIs. It helps in hosting websites and web APIs.
         To use HTML on a website, we use the `render_template` function and pass the HTML file name as an argument to it.
         And in the main file, we call the function or `app.run(host='0.0.0.0',debug=True))`.
         Not that clear yet for these parts, but I will get to know soon.
       </p>
+      </div>
+        <div class="d-none d-md-block col-md-6">
+        <img src="static/istockphoto-1180356524-612x612.webp" class="col-6" style= "height:200px;border-radius:4px;">
+        </div>
+      </div>
       <div class="text-center mt-2 mt-4">
         <p>
           I have also learned how to use style and bootstrapping, and also learned Git. The goal is to learn about Flask without getting distracted.
@@ -47,7 +55,7 @@
       </div>
       <p>Nothing to be copyrighted</p>
     </div>
-
+{%include 'footer.html'%}
 
   </body>
 </html>
