@@ -9,13 +9,13 @@ todays_learning = [{
     'leature': 1
 }, {
     'day': 2,
-    'topic': 'till now i have learn is jinja some basic of it and in title it is return as cloud Deployment ',
+    'topic':
+    'till now i have learn is jinja some basic of it and in title it is return as cloud Deployment ',
     'leature': 2
 }, {
     'day': 3,
-    'topic': 'needed to be updated by me today  
-    tried deplpymening but second time when i use it.it dose not shows image need to find out why https://project-f-a6d2.onrender.com/
-    ',
+    'topic': '''
+    tried deplpymening but second time when i use it.it dose not shows image need to find out why''',
     'leature': 3
 }, {
     'day': 4,
@@ -30,12 +30,15 @@ todays_learning = [{
 
 @app.route('/')
 def fun():
-  return render_template('index.html',
-                         todays_learning=todays_learning,
-                         owner="Sachin")
+    return render_template('index.html',
+                           todays_learning=todays_learning,
+                           owner="Sachin")
+
+
 @app.route('/learnings')
 def Api_caLL():
-  return jsonify(todays_learning)
+    return jsonify(todays_learning)
+
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', debug=True)
