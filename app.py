@@ -13,7 +13,9 @@ todays_learning = [{
     'leature': 2
 }, {
     'day': 3,
-    'topic': 'needed to be updated by me today',
+    'topic': 'needed to be updated by me today  
+    tried deplpymening but second time when i use it.it dose not shows image need to find out why https://project-f-a6d2.onrender.com/
+    ',
     'leature': 3
 }, {
     'day': 4,
